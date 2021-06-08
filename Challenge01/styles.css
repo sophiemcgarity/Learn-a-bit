@@ -58,14 +58,17 @@ table {
 body {
   box-sizing: border-box;
   font-size: 14px;
-  background-color: khaki;
+  background-image: url("./images/mintbean-dome.png");
+  background-position-x: center;
+  background-size: 260%;
+  align-self: center;
   font-family: 'Rubik', sans-serif;
 }
+
 
 header {
   width: 100%;
   background-color: var(--navy-black);
-
 }
 
 header ul {
@@ -157,20 +160,92 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
+section {
+  margin-top: 11%;
+}
+
+.card {
+  height: 500px;
+  border: solid var(--green) 2px;
+  border-radius: 2%;
+  margin: 5%;
+  background-color: rgba(34, 23, 39, 0.8);
+  padding: 8%;
+}
+
 h1 {
   font-family: 'Viga', sans-serif;
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-size: 2.1rem;
   color: var(--white-green);
+  justify-content: left;
+  line-height: 1.5;
 }
 
 p {
   font-family: 'Rubik', sans-serif;
   color: var(--white-green);
   font-weight: 300;
+  justify-content: left;
+  line-height: 2;
+  font-size: 1rem;
 }
 
 button {
   background-color: var(--green);
   font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
+
+button:hover,
+button:focus {
+  background: var(--blue-green);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-position-x: center;
+    background-size: 100%;
+  }
+
+  header li {
+    float: left;
+  }
+
+  header li a {
+    padding: 20px 30px;
+  }
+
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  header .menu-icon {
+    display: none;
+  }
+
+  li button {
+    margin: 10px;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .card {
+    margin: 0;
+    float: left;
+    width: 50%;
+  }
+}
+
