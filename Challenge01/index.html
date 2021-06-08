@@ -4,30 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Viga&display=swap" rel="stylesheet">
     <title>Mintbean Learn-a-bit Challenge 01 - Header</title>
   </head>
 
   <body>
-    Intro
-    About
-    Team
-    Contact
-    Join
-
-    Level up bit by bit with Learn-a-bit
-    
-    As the name says, the purpose of
-    Learn-a-bit is about learning one bit
-    of code at a time. In these events,
-    you will build small projects to
-    educate yourself on the fundamentals
-    of web development using HTML, CSS,
-    and JavaScript. These events are
-    relaxed and non-competitive, but are
-    still chalennging enough to push you
-    to use all your resources and
-    knowledge to solve each problem.
-    
-    Join a learn-a-ton
+    <header>
+      <img src="images/learnabit-logo.png" class="logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="card">
+        <h1>Level up bit by bit with Learn-a-bit</h1>
+        <p>
+          As the name says, the purpose of
+          Learn-a-bit is about learning one bit
+          of code at a time. In these events,
+          you will build small projects to
+          educate yourself on the fundamentals
+          of web development using HTML, CSS,
+          and JavaScript. These events are
+          relaxed and non-competitive, but are
+          still chalennging enough to push you
+          to use all your resources and
+          knowledge to solve each problem.
+        </p>
+        <button>Join a learn-a-ton</button>
+      </div>
+    </section>
   </body>
 </html>
