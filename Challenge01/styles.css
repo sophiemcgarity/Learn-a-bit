@@ -78,7 +78,7 @@ header ul {
 
 header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 20px;
   text-decoration: none;
   color: var(--white-green);
   text-align: center;
@@ -165,9 +165,9 @@ section {
 }
 
 .card {
-  height: 500px;
+  height: auto;
   border: solid var(--green) 2px;
-  border-radius: 2%;
+  border-radius: 10px;
   margin: 5%;
   background-color: rgba(34, 23, 39, 0.8);
   padding: 8%;
@@ -210,10 +210,21 @@ button:focus {
   background: var(--blue-green);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 830px) {
   body {
     background-position-x: center;
     background-size: 100%;
+  }
+
+  header {
+    margin: 0 auto;
+    display: block;
+    height: 75px;
+    width: 100%;
+  }
+
+  header img {
+    margin-left: 100px;
   }
 
   header li {
@@ -221,13 +232,23 @@ button:focus {
   }
 
   header li a {
-    padding: 20px 30px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 20px 10px;
+  }
+  
+  header span {
+    border-right: 2px solid white;
+    height: 20px;
+    margin-top: 20px;
   }
 
   header .menu {
     clear: none;
-    float: right;
     max-height: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
   }
 
   header .menu-icon {
@@ -235,17 +256,30 @@ button:focus {
   }
 
   li button {
-    margin: 10px;
-  }
-
-  section {
-    margin: 0;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
   .card {
-    margin: 0;
-    float: left;
-    width: 50%;
+    padding: 30px;
+    width: 35%;
+  }
+
+  .card p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    width: 93%;
+  }
+
+  .card button {
+    margin-top: 20px;
+    width: 250px;
   }
 }
 
+@media (max-width: 1570px) {
+  header .menu {
+    width: auto;
+  }
+}
